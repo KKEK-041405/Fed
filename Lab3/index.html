@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button>
+            parent
+        </button>
+        <div id = "child">
+            <button>
+                child
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('parent').addEventListener(
+            "click",function () {
+                alert("you have clicked parent");
+            }
+        )
+        document.getElementById('child').addEventListener(
+            "click", function (){
+                alert("you have clicked Child")
+            }
+        )
+    </script>
+</body>
+
+</html>
