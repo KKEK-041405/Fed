@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    
+
+<script>
+    var a = prompt("enter a value")
+    var b = a
+    var rem,pro=0;
+    while(a!=0){
+        rem = a%10;
+        fact = 1
+        while(rem !=0){
+            fact = fact*rem;
+            rem = rem-1;
+        }
+        pro = pro+fact;
+        a = parseInt(a/10);
+    }
+    if(pro == b){
+        document.writeln("give number "+b+" is strong number");
+    }
+    else{
+        document.writeln("give numver "+b+" is not a strong number");
+    }
+</script>
+</body>
+</html>

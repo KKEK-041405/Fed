@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong</title>
+</head>
+<body>
+<script>
+    var a = prompt("enter a value");
+    var rem,pro=0,b = a;
+    while(a!=0){
+        rem = a%10;
+        pro = pro+(rem*rem*rem);
+        a = parseInt(a/10);
+    }
+    if(pro == b){
+        document.writeln("give number "+b+" is armstrong");
+    }
+    else{
+        document.writeln("give numver "+b+" is not a armstrong");
+    }
+
+</script>    
+</body>
+
+</html>
