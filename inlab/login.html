@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <script>
+        function validate() {
+            var username = document.getElementById('uname').innerHTML
+            var password = document.getElementById('pass').innerHTML
+
+            if(username != "" && password != ""){
+                return true
+            }
+            return false
+        }
+    </script>
 </head>
 <body>
+    <form action="/welcome.html" onsubmit="return validate">
+        <input type="text" name="uname" id="uname">
+        <input type="text" name="pass" id="pass">
+        <input type="submit" name="" id="" value="submit">
+    </form>
     <script>
         var username = prompt("enter username")
         var passwrod = prompt("enter password")
