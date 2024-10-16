@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //filter
+    const numbers = [1,2,3,4,5,6,7,8,9]
+    const evenNum = numbers.filter(x => {return x%2 == 0})
+    document.writeln("array before filtering"+numbers+"<br>")
+    document.writeln("array after filtering evens numbers",evenNum,"<br>")
+    
+    
+    //reduce
+    const num = [1,2,3,4,5,6,7,8,9]
+    const sum = num.reduce((accu,curr)=> accu+curr,0)
+    document.writeln(`sum of ${num} using reduce is ${sum} <br>`)
+    
+    //map
+    var nums = [1,2,3,4,5,6,7,8,9]
+    const doubles = nums.map((a)=> a*2 )
+    document.writeln(doubles+"<br>")
+    
+    //sort
+    nums = [2,4,6,3,7,3,7,3,6]
+    document.writeln("before sort",nums,"<br>")
+    nums.sort()
+    document.writeln("after sort",nums,"<br>")
+    
+    //for-each
+    nums = [1,2,3,4,5,6,7,8]
+    document.writeln("using for-each <br>")
+    nums.forEach(element => {
+        document.write(element)
+    });
+    </script>
+</body>
+</html>

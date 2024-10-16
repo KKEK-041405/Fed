@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling</title>
+    <style>
+        #outerDiv{
+            background-color: red;
+            padding: 50px;
+        }
+
+        #innerDiv{
+            background-color: blue;
+            padding: 50px;
+            
+        }
+
+        #middleDiv{
+            background-color: blueviolet;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outerDiv">
+        <div id="middleDiv">
+            <div id="innerDiv">
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("outerDiv").addEventListener(
+            'click',function(){
+                alert("clicked outer div")
+            })
+        document.getElementById('middleDiv').addEventListener(
+            'click',function () {
+                alert("clicked middle div")
+            })
+        document.getElementById('innerDiv').addEventListener(
+            'click',function () {
+                alert("clicked inner Div")
+            }
+        )
+    </script>
+</body>
+</html>
